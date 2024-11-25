@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTERVIEW READYIFY</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .rounded-container {
+      width: 400px; /* Container width */
+      padding: 20px; /* Inner spacing */
+      border-radius: 40px; /* Rounded corners for the container */
+      background-color:rgba(0.1, 0.1, 0, 0.2); /* Light background */
+      box-shadow: 0 9px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      margin: 100px auto; /* Center the container */
+    }
+
+    .form-control {
+      border-radius: 20px 0 0 20px; /* Rounded corners for the input */
+      background-color: white;
+      border-color: white;
+      
+      
+    }
+      
+
+    .btn {
+      border-radius: 0 20px 20px 0; /* Rounded corners for the button */
+      
+
+    }
+   
+    .heading-logo a {
+      color: white; /* Change this to your desired color */
+      text-decoration: none; /* Remove underline */
+    }
+    
+    .heading-logo a span {
+      color: red; /* Keep the specific color for the span */
+    }
+    
+    .transparent-card {
+      background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+    }
+    
+    /* Styling for the sections */
+    section {
+      padding: 60px 0;
+      height: 100vh; /* Full viewport height */
+
+     
+      
+    }
+    #home {
+      background: url("welcome.webp") no-repeat center center ;
+      background-size: cover; /* Ensures the image covers the entire section */
+      height: 100vh; /* Sets the height to 100% of the viewport height */
+      
+    }
+    
+    #about { background-color: black; }
+    #services { background-color: black; }
+    #contact { background-color: black; }
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: black; /* Light background color */
+    }
+    
+    /* Custom styles for hover effects */
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.75); /* Light text color with some transparency */
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: rgba(255, 255, 255, 1); /* Full white text on hover */
+      background-color: rgb(199, 78, 78); /* Light background on hover */
+      border-radius: 10px; /* Rounded corners on hover */
+    }
+
+    .navbar-brand .red-part {
+      color: orange;
+    }
+    .navbar-brand .green-part{
+      color: lightgreen;
+    }
+    .navbar-custom { 
+      background-color: #000000; /* Custom red color */ 
+    }
+    .navbar-brand .italic{
+      font-family: initial;
+      font-stretch: ultra-expanded;
+      font-weight: bolder;
+      box-shadow: 0cqw;
+      border-radius: 1000%;
+      word-spacing:0vw;
+      text-shadow: tomato;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="red-part"><b class="italic">INTER</b></span><b class="italic">VIEW</b> <span class="green-part"><b class="italic">READYIFY</b></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Sections -->
+  <section id="home">
+    <div class="container mt-5">
+      <div class="card shadow-sm transparent-card text-dark">
+        <div class="card-body">
+          <h2 class="card-title heading-logo">
+            <a href="#">Welcome to <span class="typing"></span></a>
+          </h2>
+          <p class="card-text text-white">
+            This is a platform designed to help you prepare for interviews with curated resources, expert advice, and practice questions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-container">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter your email">
+        <button class="btn btn-primary" type="button">Sign Up</button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about">
+    <div class="container">
+      <h1 class="text-center">About</h1>
+      <p class="text-center">Learn more About us here.</p>
+    </div>
+  </section>
+  
+  <section id="services">
+    <div class="container">
+      <h1 class="text-center">Services</h1>
+      <p class="text-center">Discover our Services.</p>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="container">
+      <h1 class="text-center">Contact</h1>
+      <p class="text-center">Get in touch with us.</p>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-light py-3 mt-4">
+    <p class="mb-0">© 2024 INTERVIEW READIFY. Built with ❤️ for interview enthusiasts. 
+      <a href="#" class="text-warning">Privacy</a> |
+      <a href="#" class="text-warning">Terms</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script> <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.input-container {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid #007BFF; /* Adjust the border color as needed */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    background-color: aliceblue; /* Ensure consistent background */
+}
+
+.input-container input {
+    border: 1px solid #ccc; /* Input border styling */
+    padding: 8px;
+    margin-right: 10px; /* Space between input and button */
+    border-radius: 4px;
+    outline: none;
+    flex-grow: 1; /* Ensure the input takes available space */
+}
+
+.input-container button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
